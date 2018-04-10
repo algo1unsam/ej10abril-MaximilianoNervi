@@ -38,5 +38,13 @@ object mascaraFrankenstein {
 
 object mascaraPolitico {
 	var promesasDeCampana = [ ]
+	
+	method agregarPromesas(promesa){
+		promesasDeCampana.add(promesa)
+	}
+	
+	method nivelSusto(){
+		return promesasDeCampana.size()
+	}
 	}
 

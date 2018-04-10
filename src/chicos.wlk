@@ -4,8 +4,10 @@ object macaria {
 	var nivelIra= 10
 	var disfraces = [ ]
 	var caramelos = 0
-	const bloqueNivelDeSustoDeDisfraces = {disfraz => disfraz.nivelSusto()}
 	
+	method agregarDisfraz(disfraz){
+		disfraces.add(disfraz)
+	}
 	
 	method laHacenEnojar(){
 		
@@ -13,7 +15,7 @@ object macaria {
 	} 
 	
 	method capacidadDeSusto(){
-		return nivelIra + disfraces.sum(bloqueNivelDeSustoDeDisfraces)
+		return nivelIra + disfraces.sum({disfraz => disfraz.nivelSusto()})
 	}
 	
 

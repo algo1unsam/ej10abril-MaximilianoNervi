@@ -30,8 +30,9 @@ object mascaraDracula {
 }
 
 object mascaraFrankenstein {
+		
 	method nivelSusto(){
-		return 22
+		return 22 * 3
 	}
 }
 

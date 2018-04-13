@@ -5,7 +5,7 @@ object trajeDeBruja {
 } 
 
 object barba {
-	var longitud = 10
+	var longitud = 6/5
 	
 	method nivelSusto(){
 		return longitud * 5

@@ -1,4 +1,5 @@
 import elementos.*
+import adultos.*
 
 object macaria {
 	var nivelIra= 10
@@ -18,7 +19,7 @@ object macaria {
 	}
 	
 	method recibirCaramelos(cantidad){
-		caramelos = caramelos + cantidad
+		caramelos = caramelos + cantidad -(cantidad/4)
 	}
 	
 	method disfraces(){
@@ -41,11 +42,12 @@ object macaria {
 
 object pancracio {
 	var us = 8
-	var disfraz = mascaraDracula
+	var disfraz = [ ]
 	var caramelos = 0
 	
 	method capacidadSusto(){
-		return us + disfraz.nivelSusto()
+	return	if(disfraz == [ ]) us else
+		 us + disfraz.nivelSusto()
 	}
 	
 	method quitarDisfraz(disfrazNuevo){

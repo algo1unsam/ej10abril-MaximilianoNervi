@@ -5,7 +5,7 @@ object trajeDeBruja {
 } 
 
 object barba {
-	var longitud = 6/5
+	var longitud = 2
 	
 	method nivelSusto(){
 		return longitud * 5
@@ -47,4 +47,3 @@ object mascaraPolitico {
 		return promesasDeCampana.size()
 	}
 	}
-
